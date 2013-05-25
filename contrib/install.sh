@@ -36,7 +36,7 @@ else
 fi
 
 echo "Downloading docker binary and uncompressing into /usr/local/bin..."
-curl -s http://get.docker.io/builds/$(uname -s)/$(uname -m)/docker-latest.tgz |
+curl -s https://s3.amazonaws.com/get.docker.io/builds/$(uname -s)/$(uname -m)/docker-latest.tgz |
 tar -C /usr/local/bin --strip-components=1 -zxf- \
 docker-latest/docker
 
